@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContainerMainComponent implements OnInit {
 
   message: string;
+  languages: string[] = ['Java', 'PHP', 'JavaScript','Python']
 
   constructor() { 
     this.message = 'Hello Bruno, welcome to Angular JS'
