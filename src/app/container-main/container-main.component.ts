@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContainerServiceService } from './container-service.service'
 
 @Component({
   selector: 'app-container-main',
@@ -8,11 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class ContainerMainComponent implements OnInit {
 
   message: string;
-  languages: string[] = ['Java', 'PHP', 'JavaScript','Python']
+  languages: string[] = [];
 
-  constructor() { 
+  constructor(private containerServiceService: ContainerServiceService) { 
     this.message = 'Hello Bruno, welcome to Angular JS'
+
+    this.languages = containerServiceService.getLanguages()
   }
+
 
   ngOnInit(): void {
   }
