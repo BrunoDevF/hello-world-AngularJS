@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ContainerMainComponent } from './container-main.component';
 import { ContentComponent } from './content/content.component';
 import { ContainerServiceService } from './container-service.service'
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ContainerServiceService } from './container-service.service'
     ContentComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     ContainerMainComponent
