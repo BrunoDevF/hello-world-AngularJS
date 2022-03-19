@@ -1,4 +1,4 @@
-<p>container-main works! TOP</p>
+<!-- <p>container-main works! TOP</p>
 <app-content></app-content>
 
 {{ message }}
@@ -6,9 +6,12 @@
     <li *ngFor="let language of languages">
         {{ language }}
     </li>
-</ul>
+</ul> -->
 
 <!-- <input type="text" (keyup)="onChange($event)">  -->
-<input type="text" [(ngModel)]="nome">
-<label>Valor atual do input: {{ nome }}</label>
+<!-- <input type="text" [(ngModel)]="nome">
+<label>Valor atual do input: {{ nome }}</label> -->
+
+<app-input [nome]="nomeCurso"></app-input>
+<app-input [nome]="'curso teste'"></app-input>
 

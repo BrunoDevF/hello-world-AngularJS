@@ -12,6 +12,7 @@ export class ContainerMainComponent implements OnInit {
   languages: string[] = [];
   inputValue: string = '';
   nome: string = 'bruno';
+  nomeCurso: string = 'Curso de Javascript';
 
   constructor(private containerServiceService: ContainerServiceService) { 
     this.message = 'Hello Bruno, welcome to Angular JS'

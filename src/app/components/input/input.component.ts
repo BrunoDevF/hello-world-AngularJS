@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-input',
@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class InputComponent implements OnInit {
 
   constructor() { }
+  
+  // Nome do parametro que o componente irá receber
+  @Input('nome') nomeCurso: string = '';
 
   ngOnInit(): void {
   }
